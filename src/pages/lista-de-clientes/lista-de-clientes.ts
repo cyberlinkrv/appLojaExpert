@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-lista-de-clientes',
   templateUrl: 'lista-de-clientes.html',

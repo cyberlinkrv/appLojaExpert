@@ -5,7 +5,7 @@ import { TermosDeUsoNoBtPage } from '../termos-de-uso-no-bt/termos-de-uso-no-bt'
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { LoginUser } from '../../app/models/login';
 import { AlertController } from 'ionic-angular';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-bem-vindo',
   templateUrl: 'bem-vindo.html',

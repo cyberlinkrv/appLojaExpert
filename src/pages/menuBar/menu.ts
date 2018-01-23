@@ -6,7 +6,7 @@ import { ListaDeProdutosPage } from '../lista-de-produtos/lista-de-produtos';
 import { OrAmentosCadastradosPage } from '../or-amentos-cadastrados/or-amentos-cadastrados';
 import { ConsultarConvNioClientePage } from '../consultar-conv-nio-cliente/consultar-conv-nio-cliente';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
-
+//This app cread by Divino J. Silva
 
 
 @Component({

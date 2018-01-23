@@ -3,7 +3,7 @@ import { NavController, App, NavParams } from 'ionic-angular';
 import { MenuBarPage } from '../menuBar/menu';
 import { NovoOrAmentoClientesPage } from '../novo-or-amento-clientes/novo-or-amento-clientes';
 import { OrAmentosCadastradosPage } from '../or-amentos-cadastrados/or-amentos-cadastrados';
-
+//This app cread by Divino J. Silva
 
 @Component({
   selector: 'page-termos-de-uso',

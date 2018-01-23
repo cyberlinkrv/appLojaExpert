@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { ListaOrcamentos } from '../../app/models/listOrcamentos';
 import { detalhesOrcamentosPage } from '../../pages/detalhesOrcamentos/detalhesOrcamentos';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-or-amentos-cadastrados',
   templateUrl: 'or-amentos-cadastrados.html',

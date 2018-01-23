@@ -6,7 +6,7 @@ import { CadProdutos } from '../../app/models/produtos';
 import { CadOrcamento } from '../../app/models/orcamento';
 import { AlertController } from 'ionic-angular';
 import { MenuBarPage } from '../menuBar/menu';
-
+//This app cread by Divino J. Silva
 /**
  * Generated class for the EditarOrcamentoPage page.
  *

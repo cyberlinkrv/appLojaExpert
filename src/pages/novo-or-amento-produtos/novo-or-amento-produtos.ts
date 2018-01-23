@@ -6,7 +6,7 @@ import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { CadProdutos } from '../../app/models/produtos';
 import { CadOrcamento } from '../../app/models/orcamento';
 import { AlertController } from 'ionic-angular';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-novo-or-amento-produtos',
   templateUrl: 'novo-or-amento-produtos.html'

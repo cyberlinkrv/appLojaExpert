@@ -3,7 +3,7 @@ import { NavController, NavParams, ToastController } from 'ionic-angular';
 import { NovoOrAmentoProdutosPage } from '../novo-or-amento-produtos/novo-or-amento-produtos';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { AlertController } from 'ionic-angular';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-novo-or-amento-clientes',
   templateUrl: 'novo-or-amento-clientes.html'

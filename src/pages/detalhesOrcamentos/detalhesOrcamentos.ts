@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular'; //Tem que adicionar aqui junto com NavController o NavParams
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { EditarOrcamentoPage } from '../editar-orcamento/editar-orcamento';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'detalhesOrcamentos',
   templateUrl: 'detalhesOrcamentos.html',

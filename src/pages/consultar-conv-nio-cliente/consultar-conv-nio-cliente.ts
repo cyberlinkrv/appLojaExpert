@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { AlertController } from 'ionic-angular';
-
+//This app cread by Divino J. Silva
 @Component({
   selector: 'page-consultar-conv-nio-cliente',
   templateUrl: 'consultar-conv-nio-cliente.html',

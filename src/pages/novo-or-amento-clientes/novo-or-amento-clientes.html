@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Novo Orçamento Clientes
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="width:300px;height:32px;" id="novoOrAmentoClientes-spacer15"></div>
+  <div id="novoOrAmentoClientes-markdown6" style="text-align:justify;" class="show-list-numbers-and-dots">
+
+    <h6> Bem vindo!! -- Nesta Tela você esta iniciando um novo orçamento. Primeiro selecione o cliente na lista abaixo.</h6>
+
+  </div>
+
+  <ion-list id="novoOrAmentoClientes-list7" *ngFor="let cliente of listaClientes">
+    <ion-item color="balanced" id="novoOrAmentoClientes-list-item15" on-click="idCliente(cliente.id, cliente.nomeCliente)">
+      {{cliente.id}}: <b style="white-space: normal!important;">{{cliente.nomeCliente}}</b>
+      <ion-icon name="person" item-right style="color: green"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <div class="spacer" style="width:300px;height:27px;" id="novoOrAmentoClientes-spacer16"></div>
+
+</ion-content>

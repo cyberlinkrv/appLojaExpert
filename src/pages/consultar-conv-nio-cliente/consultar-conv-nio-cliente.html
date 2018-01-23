@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Consultar Convênio Cliente
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page10" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="height:14px;" id="consultarConvNioCliente-spacer25"></div>
+  <h6>Para saber qual o convênio do cliente é so clicar no nome do mesmo.</h6>
+
+  <ion-list id="consultarConvNioCliente-list12">
+    <ion-card *ngFor="let cliente of listaClientes" on-click="consultaConvenio(cliente.id)">
+      <ion-card-header>
+        {{cliente.nomeCliente}}
+      </ion-card-header>
+      <ion-card-content>
+        <p>Código : {{cliente.id}}</p>
+        <p>End : {{cliente.endereco}}</p>
+        <p>Cidade: {{cliente.cidade}}</p>
+        <p>UF: {{cliente.uf}}</p>
+        <p>Telefone: {{cliente.telefone}}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,15 @@
+page-termos-de-uso {
+
+}
+
+
+.tab-button {
+    &[aria-selected="false"] {
+      color: #8c8c8c !important;
+    }
+
+    &[aria-selected="true"] {
+      color: #f53d3d !important;
+    }
+
+  }

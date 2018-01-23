@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Detalhes do Orçamento
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page11" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="height:14px;" id="detalhesOrcamento-spacer24"></div>
+  <!--ng-message= "total" pega o conteudo da variavel que esta no aquivo ts e {{total}} mostra o valor -->
+  <h6 ng-message="total,client,cod,mStatus">Todos os produtos que compõem o orçamento estão listados Abaixo.</h6>
+  <h6><a>Cod: {{cod}}  Cliente: {{client}}</a></h6>
+  <ion-list id="detalhesOrcamento-list11">
+    <ion-item *ngFor="let detalheOrc of detalhesOrcamento" color="balanced" id="orAmentosCadastrados-list-item32">
+
+      {{detalheOrc.nome_produto}}
+      <p>Quantidade: {{detalheOrc.quant}}</p>
+      <p>Valor Unitário: R$ {{detalheOrc.valor}}</p>
+      <p>Soma dos Produtos: R$ {{detalheOrc.vr_total}}</p>
+    </ion-item>
+  </ion-list>
+  <h6>Valor Total do Orçamento R$ {{total}}</h6>
+  <h6>{{mStatus}}</h6>
+  <div style="width:300px;height:34px;"></div>
+  <button ion-button on-click="editarOrc()" block style="border-radius:35px 35px 35px 35px;">Editar Orçamento</button>
+
+  <!--<div style="width:300px;height:34px;"></div>
+  <button ion-button color="danger" on-click="CancelarOrc()" block style="border-radius:35px 35px 35px 35px;">Cancelar Orçamento</button>
+  -->
+</ion-content>

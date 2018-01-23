@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Lista de Produtos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="height:14px;" id="listaDeProdutos-spacer23"></div>
+
+  <ion-list id="listaDeProdutos-list10">
+    <ion-item *ngFor="let produto of listaProdutos" color="none" id="listaDeProdutos-list-item28">
+
+      <p><b style="white-space: normal!important;">{{produto.nomeProduto}}</b></p>
+
+      <p>Valor R$ = {{produto.vrVenda}}</p>
+      <p>Estoque Disponível = {{produto.estoque}}</p>
+      <p>Código = {{produto.id}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

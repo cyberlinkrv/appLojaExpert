@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Orçamentos Cadastrados
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding id="page9" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="height:14px;" id="orAmentosCadastrados-spacer24"></div>
+  <h6>Todos os orçamentos em aberto estão listados abaixo.</h6>
+
+  <ion-list id="orAmentosCadastrados-list11">
+    <ion-item *ngFor="let listaOrc of listaOrcament" on-click="detalhes(listaOrc.controle, listaOrc.vr_total, listaOrc.nome_cliente, listaOrc.cod_lancamento)"
+      color="balanced" id="orAmentosCadastrados-list-item32">
+      <ion-icon name="pricetag" item-left></ion-icon>
+      {{listaOrc.nome_cliente}}
+      <p>Número: {{listaOrc.cod_lancamento}}</p>
+      <p>Data: {{listaOrc.data_venda}}</p>
+      <p>Total: R$ {{listaOrc.vr_total}}</p>
+      <p>Controle: {{listaOrc.controle}}</p>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+

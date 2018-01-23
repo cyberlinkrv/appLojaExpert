@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title style="text-align: center">
+      Editar Orçamento
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page6" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div id="novoOrAmentoProdutos-markdown7" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="text-align: center">Você esta editando orçamento: </p>
+    <h6 ng-message="nomeCliente,idOrc" style="text-align: center"><b>Cod: {{idOrc}} Cliente: {{nomeCliente}}</b></h6>
+    <!--<p style="text-align: center">Assim que escolher o produto e a quantidade click no botão "ADICIONAR PRODUTO NA LISTA"</p> -->
+  </div>
+  <div class="spacer" style="width:300px;height:5px;" id="novoOrAmentoProdutos-spacer17"></div>
+
+  <ion-list id="novoOrAmentoProdutos-list8" *ngFor="let listPA of addLista">
+    <ion-item color="none" id="novoOrAmentoProdutos-list-item21" on-click="doConfirmAlert(listPA.idProduto,listPA.nomeProd)">
+      Sequência: {{listPA.id}}
+      <br>Produto: {{listPA.nomeProd}}
+      <br>Quantidade: {{listPA.qdt}}
+      <br>Valor Produtos: R$ {{listPA.vlr}}
+    </ion-item>
+  </ion-list>
+  <ion-item id="novoOrAmentoProdutos-textarea2">
+    <ion-label ng-message="soma">
+      <b> Valor Total : R$ {{soma}} </b>
+    </ion-label>
+  </ion-item>
+  <div class="spacer" style="width:100%;height:17px;background-color:blue;" id="novoOrAmentoProdutos-spacer18"></div>
+  <div id="novoOrAmentoProdutos-markdown8" style="text-align:justify;" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      Produtos que já fazem parte deste do orçamento estão listados acima:
+    </p>
+  </div>
+  <form id="novoOrAmentoProdutos-form3">
+
+    <ion-item id="novoOrAmentoProdutos-select1">
+      <ion-label fixed class='fixedLabel'>
+        Produtos
+      </ion-label>
+      <ion-select fixed class='fixedSelect' [(ngModel)]="prodCad.vrVenda" [ngModelOptions]="{standalone: true}" cancelText="Cancelar"
+        okText="OK" (ngModelChange)="splitValores()">
+        <ion-option *ngFor="let produto of listaProdutos" value="{{produto.vrVenda}};{{produto.id}};{{produto.nomeProduto}}" selected="{{produto.vrVenda}},{{produto.id}},{{produto.nomeProduto}}">
+          {{produto.nomeProduto}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item id="novoOrAmentoProdutos-textarea1">
+      <ion-label ng-message="valor">
+        Valor : R$ {{valor}}
+      </ion-label>
+    </ion-item>
+
+    <div class="spacer" style="width:300px;height:17px;" id="novoOrAmentoProdutos-spacer18"></div>
+
+    <ion-item id="novoOrAmentoProdutos-input5">
+      <ion-label>
+        Quantidade:
+      </ion-label>
+      <ion-input type="number" placeholder="" min="1" [(ngModel)]="orc.qdt" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+
+  </form>
+  <p></p>
+  <button id="novoOrAmentoProdutos-button9" on-click="addInList()" ion-button color="balanced" block style="border-radius:35px 35px 35px 35px;">
+    Adicionar Produto na Lista
+  </button>
+
+  <div class="spacer" style="width:300px;height:35px;" id="novoOrAmentoProdutos-spacer17"></div>
+
+  <button id="novoOrAmentoProdutos-button12" on-click="gravarOrc()" ion-button color="secondary" block style="border-radius:35px 35px 35px 35px;">
+      Confirmar
+    </button>
+  <div class="spacer" style="width:300px;height:40px;" id="novoOrAmentoProdutos-spacer18"></div>
+
+</ion-content>

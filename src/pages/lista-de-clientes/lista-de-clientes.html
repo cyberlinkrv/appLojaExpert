@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title style="text-align: center">
+      Lista de Clientes
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7" style="background-color:#EDF5ED;">
+  <div>
+    <img src="assets/img/60nqlcg6Rqdq5GTkedCw_5MbNpR5SrC6SaufkNJw1_logoc.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;"
+    />
+  </div>
+  <div class="spacer" style="width:300px;height:14px;" id="listaDeClientes-spacer22"></div>
+
+  <ion-list id="listClientes_01">
+    <ion-card *ngFor="let cliente of listaClientes">
+      <ion-card-header>
+        {{cliente.nomeCliente}}
+      </ion-card-header>
+      <ion-card-content>
+        <p>Código : {{cliente.id}}</p>
+        <p>End : {{cliente.endereco}}</p>
+        <p>Cidade: {{cliente.cidade}}</p>
+        <p>UF: {{cliente.uf}}</p>
+        <p>Telefone: {{cliente.telefone}}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

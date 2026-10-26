@@ -4,9 +4,7 @@
     <description>Projeto TFC UniRV de Divino J. Silva</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Divino Joaquim da Silva</author>
     <content src="index.html" />
-    <access origin="*" />
-    <allow-navigation href="http://ionic.local/*" />
-    <allow-intent href="http://*/*" />
+    <access origin="https://*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
